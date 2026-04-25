@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <title>Reg-Immo — Biens à disposition</title>
+        <meta name="description" content="Découvrez notre sélection de biens immobiliers au Luxembourg. Maisons, appartements et propriétés de prestige.">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+        <header>
+            <a class="real" href="../../../app/index.html"><img src="../../../assets/images/reg-immo-noir.png" alt="Logo Reg-Immo"></a>
+            <nav class="nav">
+                <a href="../../../app/index.html">Accueil</a>
+                <a href="../about/about.html">À propos</a>
+                <a href="./sales.html" class="active">Biens à disposition</a>
+                <a href="../contact/contact.html">Contact</a>
+                <div class="lang-selector">
+                    <span class="current-lang">FR</span>
+                    <div class="lang-dropdown">
+                        <a href="./sales-en.html">EN</a>
+                        <a href="./sales-de.html">DE</a>
+                        <a href="./sales-lu.html">LU</a>
+                        <a href="./sales-nl.html">NL</a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <div class="logo-wrapper">
+                <img src="../../../assets/images/reg-immo-noir.png" class="logo" alt="Reg-Immo — Biens à disposition">
+            </div>
+
+            <div class="sales-header reveal">
+                <h1 class="sales-title">Biens à disposition</h1>
+                <div class="gold-line-sales"></div>
+                <p class="sales-subtitle">Une sélection exclusive de propriétés au Grand-Duché de Luxembourg</p>
+            </div>
+
+            <div class="search-bar-wrap">
+                <form class="search-bar" onsubmit="return false;">
+                    <div class="search-field">
+                        <label class="search-label">Budget min</label>
+                        <div class="search-input-wrap">
+                            <input type="number" class="search-input" placeholder="0 €" min="0" step="10000">
+                            <span class="search-unit">€</span>
+                        </div>
+                    </div>
+                    <div class="search-divider"></div>
+                    <div class="search-field">
+                        <label class="search-label">Budget max</label>
+                        <div class="search-input-wrap">
+                            <input type="number" class="search-input" placeholder="Sans limite" min="0" step="10000">
+                            <span class="search-unit">€</span>
+                        </div>
+                    </div>
+                    <div class="search-divider"></div>
+                    <div class="search-field">
+                        <label class="search-label">Type de bien</label>
+                        <select class="search-select">
+                            <option value="" disabled selected>Tous les biens</option>
+                            <option value="maison">Maison</option>
+                            <option value="appartement">Appartement</option>
+                            <option value="terrain">Terrain</option>
+                            <option value="commercial">Local commercial</option>
+                            <option value="bureau">Bureau</option>
+                        </select>
+                    </div>
+                    <div class="search-divider"></div>
+                    <div class="search-field search-field--sector">
+                        <label class="search-label">Secteur</label>
+                        <input type="text" class="search-input" placeholder="ex : Luxembourg, Hesperange, Strassen…">
+                    </div>
+                    <button type="submit" class="search-btn">
+                        <span>Rechercher</span>
+                    </button>
+                </form>
+            </div>
+
+            <div class="biens-section">
+            <section class="tableau">
+                <a href="../properties/bien.html" class="reveal" style="transition-delay: 0.1s">
+                    <article class="vitrine">
+                        <div class="vitrine-badge">À VENDRE</div>
+                        <img src="../../../assets/images/bien6.jpg" alt="Appartement Luxembourg-Ville">
+                        <div class="description">Appartement dans le centre de Luxembourg-Ville</div>
+                        <div class="infos">
+                            <div class="prix">100 000 €</div>
+                            <div class="icones">
+                                <div class="icone">
+                                    <span class="nbre">3</span>
+                                    <img src="../../../assets/images/icochbre.png" alt="chambres">
+                                </div>
+                                <div class="icone">
+                                    <span class="nbre">5</span>
+                                    <img src="../../../assets/images/icom2.png" alt="pièces">
+                                </div>
+                                <div class="icone">
+                                    <span class="nbre">9</span>
+                                    <img src="../../../assets/images/icosdb.png" alt="salle de bains">
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </a>
+
+                <a href="../properties/bien.html" class="reveal" style="transition-delay: 0.25s">
+                    <article class="vitrine">
+                        <div class="vitrine-badge">À VENDRE</div>
+                        <img src="../../../assets/images/bien7.jpg" alt="Appartement Luxembourg-Ville">
+                        <div class="description">Appartement dans le centre de Luxembourg-Ville</div>
+                        <div class="infos">
+                            <div class="prix">100 000 €</div>
+                            <div class="icones">
+                                <div class="icone">
+                                    <span class="nbre">3</span>
+                                    <img src="../../../assets/images/icochbre.png" alt="chambres">
+                                </div>
+                                <div class="icone">
+                                    <span class="nbre">5</span>
+                                    <img src="../../../assets/images/icom2.png" alt="pièces">
+                                </div>
+                                <div class="icone">
+                                    <span class="nbre">9</span>
+                                    <img src="../../../assets/images/icosdb.png" alt="salle de bains">
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </a>
+
+                <a href="../properties/bien.html" class="reveal" style="transition-delay: 0.4s">
+                    <article class="vitrine">
+                        <div class="vitrine-badge">À VENDRE</div>
+                        <img src="../../../assets/images/bien5.jpg" alt="Appartement Luxembourg-Ville">
+                        <div class="description">Appartement dans le centre de Luxembourg-Ville</div>
+                        <div class="infos">
+                            <div class="prix">100 000 €</div>
+                            <div class="icones">
+                                <div class="icone">
+                                    <span class="nbre">3</span>
+                                    <img src="../../../assets/images/icochbre.png" alt="chambres">
+                                </div>
+                                <div class="icone">
+                                    <span class="nbre">5</span>
+                                    <img src="../../../assets/images/icom2.png" alt="pièces">
+                                </div>
+                                <div class="icone">
+                                    <span class="nbre">9</span>
+                                    <img src="../../../assets/images/icosdb.png" alt="salle de bains">
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </a>
+            </section>
+            </div>
+        </main>
+
+        <footer>
+            <div class="footer-content">
+                <div class="footer-contact">
+                    <a href="tel:+352671158484">+352 671 158 484</a>
+                    <span class="separator">|</span>
+                    <a href="mailto:info@reg-immo.lu">info@reg-immo.lu</a>
+                    <span class="separator">|</span>
+                    <span class="rdv">Uniquement sur rendez-vous</span>
+                </div>
+                <nav class="footer-legal">
+                    <a href="./legal-mentions.html">Mentions légales</a>
+                    <a href="./privacy-policy.html">Politique de confidentialité</a>
+                </nav>
+                <div class="footer-bottom">
+                    <span class="copyright">&copy; 2026 Reg-Immo S.A.R.L. Tous droits réservés.</span>
+                </div>
+            </div>
+        </footer>
+
+        <script src="./sales.js"></script>
+    </body>
+</html>

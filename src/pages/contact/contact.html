@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <title>reg-immo - Contact</title>
+        <meta name="description" content="à définir">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./contact.css">
+    </head>
+    <body>
+        <header>
+            <a class="real" href="../../../app/index.html"><img src="../../../assets/images/reg-immo-noir.png" alt="Logo Reg-Immo"></a>
+            <nav class="nav">
+                <a href="../../../app/index.html">Accueil</a>
+                <a href="../about/about.html">À propos</a>
+                <a href="../sales/sales.html">Biens à disposition</a>
+                <a href="./contact.html" class="active">Contact</a>
+                <div class="lang-selector">
+                    <span class="current-lang">FR</span>
+                    <div class="lang-dropdown">
+                        <a href="./en.html">EN</a>
+                        <a href="./de.html">DE</a>
+                        <a href="./lu.html">LU</a>
+                        <a href="./nl.html">NL</a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <div class="logo-wrapper">
+                <img src="../../../assets/images/realesteate.png" class="logo" alt="logo of reg-immo, logo de reg-immo, reg-immo Logo, immobilier luxembourg">
+            </div>
+            <div class="sepa"></div>
+            <div class="milieu">
+                <div class="fond">
+                    <div class="real">Pour mener à bien votre projet d’achat ou de vente, <span class="estate">The Real Estate Group</span> vous propose un accompagnement personnalisé adapté à vos besoins.</div>
+
+                    <div class="av">
+                        <div class="avantage">- Estimation gratuite de votre propriété -</div>
+                        <div class="avantage"> - Réalisation de passeport énergétique -</div>
+                        <div class="avantage"> - Conseils offerts en Home Staging -</div>
+                    </div>
+                </div> 
+                <div class="separ"></div>
+
+                <!-- FORMULAIRE DE CONTACT -->
+                <div class="nous-contacter">
+                    <div class="nous-contacter-title">Nous contacter</div>
+                    <div class="nous-contacter-line"></div>
+                </div>
+                <div class="form-contact-wrap">
+                    <form id="contactForm" novalidate>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="prenom">Prénom <span class="required">*</span></label>
+                                <input type="text" id="prenom" name="prenom" placeholder="Jean" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="nom">Nom <span class="required">*</span></label>
+                                <input type="text" id="nom" name="nom" placeholder="Dupont" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">E-mail <span class="required">*</span></label>
+                                <input type="email" id="email" name="email" placeholder="jean.dupont@example.com" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="telephone">Téléphone <span class="required">*</span></label>
+                                <input type="tel" id="telephone" name="telephone" placeholder="+352 XXX XXX XXX" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="sujet">Objet de votre demande</label>
+                            <select id="sujet" name="sujet">
+                                <option value="" disabled selected>Sélectionnez un sujet</option>
+                                <option value="achat">Achat d'un bien</option>
+                                <option value="vente">Vente d'un bien</option>
+                                <option value="location">Location</option>
+                                <option value="estimation">Estimation gratuite</option>
+                                <option value="passeport">Passeport énergétique</option>
+                                <option value="homestaging">Conseils Home Staging</option>
+                                <option value="autre">Autre</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message <span class="required">*</span></label>
+                            <textarea id="message" name="message" placeholder="Décrivez votre projet ou votre demande..."></textarea>
+                        </div>
+                        <div class="form-submit-wrap">
+                            <button type="submit" class="form-submit"><span>Envoyer le message</span></button>
+                        </div>
+                    </form>
+                    <div class="form-success" id="formSuccess">
+                        <span class="success-icon">◆</span>
+                        <div class="success-title">Message envoyé</div>
+                        <p class="success-text">Merci pour votre message.<br>Notre équipe vous contactera dans les plus brefs délais.</p>
+                    </div>
+                </div>
+
+                <div class="contenu">
+                    <div class="gauche">
+                        <div class="haut">
+                            <div class="tre">Coordonnées :</div>
+                            <div class="coordonee">
+                                <div class="tel">Téléphone : <a class="deco" href="tel:+352671158484"> +352 671 158 484 </a></div>
+                                <div class="enveloppe">E-mail : <a class="deco" href="mailto:info@reg-immo.lu">info@reg-immo.lu</a></div>
+                            </div>
+                        </div>
+                        <div class="separa"></div>
+                        <div class="activite">
+                            <div class="tre">Activités :</div>
+                            <div class="act">
+                                <div class="conseils">Achats / Ventes et Locations de Biens Immobiliers</div>
+                                <div class="conseils">Promotions Immobilières</div>
+                                <div class="conseils">Conseil et estimation</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="droite">
+                        <div class="titre">Localisation :</div>
+                        <div class="plan">
+                            <div class="map">
+                                <iframe width="400" height="320" src="https://www.openstreetmap.org/export/embed.html?bbox=6.150214076042176%2C49.574690260509044%2C6.155471205711366%2C49.57677389164205&amp;layer=mapnik&amp;marker=49.57573208719525%2C6.15284264087677" style="border: 2px solid black">
+                                </iframe>
+                            </div>
+
+                            <div class="adresse">
+                                <div class="agence">The Real Estate Group</div>
+                                <div class="rue">380 Route de Thionville</div>
+                                <div class="ville">L-5884 - HESPERANGE (Luxembourg)</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+            </div>
+        </main>
+        <footer>
+            <div class="footer-content">
+                <div class="footer-contact">
+                    <a href="tel:+352671158484">+352 671 158 484</a>
+                    <span class="separator">|</span>
+                    <a href="mailto:info@reg-immo.lu">info@reg-immo.lu</a>
+                    <span class="separator">|</span>
+                    <span class="rdv">Uniquement sur rendez-vous</span>
+                </div>
+                <nav class="footer-legal">
+                    <a href="./legal-mentions.html">Mentions légales</a>
+                    <a href="./privacy-policy.html">Politique de confidentialité</a>
+                </nav>
+                <div class="footer-bottom">
+                    <span class="copyright">&copy; 2026 Reg-Immo S.A.R.L. Tous droits réservés.</span>
+                </div>
+            </div>
+        </footer>
+
+        <script src="./contact.js"></script>
+    </body>
+</html>
