@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex, nofollow">
+    <title>Admin — Reg-Immo</title>
+    <link rel="stylesheet" href="./admin.css">
+</head>
+<body>
+
+    <header>
+        <h1>Gestion des biens</h1>
+        <button id="btn-logout">Se déconnecter</button>
+    </header>
+
+    <main>
+        <section class="formulaire-section">
+            <h2 id="form-titre">Ajouter un bien</h2>
+            <form id="bien-form">
+                <input type="hidden" id="bien-id">
+                <div class="champ">
+                    <label>Titre</label>
+                    <input type="text" id="titre" placeholder="Ex: Maison à Gasperich" required>
+                </div>
+                <div class="champ">
+                    <label>Prix (€)</label>
+                    <input type="text" id="prix" placeholder="Ex: 950 000" required>
+                </div>
+                <div class="champ">
+                    <label>Chambres</label>
+                    <input type="number" id="chambres" placeholder="Ex: 3" required>
+                </div>
+                <div class="champ">
+                    <label>Mètres carrés</label>
+                    <div class="input-avec-plus">
+                        <input type="number" id="metres_carres" placeholder="Ex: 120" required>
+                        <button type="button" class="btn-plus" id="toggle-surfaces">+</button>
+                    </div>
+                    <div class="detail-cadre" id="cadre-surfaces" style="display:none">
+                        <div id="surfaces-liste"></div>
+                        <button type="button" class="btn-ajouter-detail" onclick="ajouterLigne('surfaces-liste', 'surface')">Ajouter des détails sur une pièce</button>
+                    </div>
+                </div>
+                <div class="champ">
+                    <label>Hauteur <span class="facultatif">(facultatif)</span></label>
+                    <div class="input-avec-plus">
+                        <input type="number" id="hauteur" placeholder="Ex: 2.5" step="0.1">
+                        <button type="button" class="btn-plus" id="toggle-hauteurs">+</button>
+                    </div>
+                    <div class="detail-cadre" id="cadre-hauteurs" style="display:none">
+                        <div id="hauteurs-liste"></div>
+                        <button type="button" class="btn-ajouter-detail" onclick="ajouterLigne('hauteurs-liste', 'hauteur')">Ajouter des détails sur une pièce</button>
+                    </div>
+                </div>
+                <div class="champ">
+                    <label>Salles de bains</label>
+                    <input type="number" id="salles_de_bains" placeholder="Ex: 2" required>
+                </div>
+                <div class="champ">
+                    <label>Description <span class="facultatif">(facultatif)</span></label>
+                    <textarea id="description" placeholder="Description du bien..." rows="5"></textarea>
+                </div>
+                <div class="champ">
+                    <label>Statut</label>
+                    <select id="statut">
+                        <option value="à vendre">À vendre</option>
+                        <option value="en location">En location</option>
+                    </select>
+                </div>
+
+                <input type="file" id="img-file-input" accept="image/jpeg,image/png,image/webp,.jpg,.jpeg,.png,.webp" style="display:none">
+
+                <div class="champ">
+                    <label>Images <span class="facultatif" id="img-hint">— clic : sélectionner · double-clic : explorateur · Ctrl+V : coller</span></label>
+                    <div class="img-layout-admin">
+                        <div class="img-col-gauche">
+                            <div class="img-slot" data-slot="pgm" onclick="activerSlot('pgm')" ondblclick="ouvrirExplorateur('pgm')">
+                                <span class="img-slot-label">Principale</span>
+                                <div class="img-slot-plus">+</div>
+                                <img class="img-slot-preview" src="" style="display:none">
+                                <button type="button" class="img-slot-del" onclick="supprimerSlot(event,'pgm')">×</button>
+                            </div>
+                            <div class="img-row-bas">
+                                <div class="img-slot" data-slot="pgb1" onclick="activerSlot('pgb1')" ondblclick="ouvrirExplorateur('pgb1')">
+                                    <div class="img-slot-plus">+</div>
+                                    <img class="img-slot-preview" src="" style="display:none">
+                                    <button type="button" class="img-slot-del" onclick="supprimerSlot(event,'pgb1')">×</button>
+                                </div>
+                                <div class="img-slot" data-slot="pgb2" onclick="activerSlot('pgb2')" ondblclick="ouvrirExplorateur('pgb2')">
+                                    <div class="img-slot-plus">+</div>
+                                    <img class="img-slot-preview" src="" style="display:none">
+                                    <button type="button" class="img-slot-del" onclick="supprimerSlot(event,'pgb2')">×</button>
+                                </div>
+                                <div class="img-slot" data-slot="pgb3" onclick="activerSlot('pgb3')" ondblclick="ouvrirExplorateur('pgb3')">
+                                    <div class="img-slot-plus">+</div>
+                                    <img class="img-slot-preview" src="" style="display:none">
+                                    <button type="button" class="img-slot-del" onclick="supprimerSlot(event,'pgb3')">×</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="img-col-droite">
+                            <div class="img-slot" data-slot="pdh" onclick="activerSlot('pdh')" ondblclick="ouvrirExplorateur('pdh')">
+                                <div class="img-slot-plus">+</div>
+                                <img class="img-slot-preview" src="" style="display:none">
+                                <button type="button" class="img-slot-del" onclick="supprimerSlot(event,'pdh')">×</button>
+                            </div>
+                            <div class="img-slot" data-slot="pdb" onclick="activerSlot('pdb')" ondblclick="ouvrirExplorateur('pdb')">
+                                <div class="img-slot-plus">+</div>
+                                <img class="img-slot-preview" src="" style="display:none">
+                                <button type="button" class="img-slot-del" onclick="supprimerSlot(event,'pdb')">×</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-actions">
+                    <button type="submit" id="btn-submit">Ajouter</button>
+                    <button type="button" id="btn-annuler" style="display:none">Annuler</button>
+                </div>
+            </form>
+        </section>
+
+        <section class="liste-section">
+            <h2>Biens existants</h2>
+            <div id="liste-biens"></div>
+        </section>
+
+        <section class="archives-section">
+            <h2>Archives <span class="archives-count" id="archives-count"></span></h2>
+            <p class="archives-desc">Biens vendus et archivés</p>
+            <div id="liste-archives"></div>
+        </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js"></script>
+    <script src="./admin.js"></script>
+</body>
+</html>

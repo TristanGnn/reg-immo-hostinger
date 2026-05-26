@@ -2,17 +2,66 @@
 <html lang="fr">
     <head>
         <meta charset="UTF-8">
-        <title>Reg-Immo — À propos de nous</title>
-        <meta name="description" content="Découvrez Reg-Immo, votre agence immobilière de prestige au Luxembourg. Notre histoire, nos valeurs et notre engagement.">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ilhame Hajaje — Agent Immobilier Luxembourg | Reg-Immo</title>
+        <meta name="description" content="Ilhame Hajaje, fondatrice de Reg-Immo. 8 ans d'expertise en vente immobilière au Luxembourg. Conseil et accompagnement personnalisé pour votre projet.">
+        <meta name="robots" content="index, follow">
+        <link rel="icon" href="../../../assets/images/favicon.svg" type="image/svg+xml">
+        <link rel="canonical" href="https://reg-immo.lu/about">
+        <!-- Géolocalisation -->
+        <meta name="geo.region" content="LU">
+        <meta name="geo.placename" content="Luxembourg">
+        <meta name="geo.position" content="49.5752;6.1443">
+        <meta name="ICBM" content="49.5752, 6.1443">
+        <!-- Open Graph -->
+        <meta property="og:type" content="profile">
+        <meta property="og:site_name" content="Reg-Immo">
+        <meta property="og:locale" content="fr_LU">
+        <meta property="og:title" content="Ilhame Hajaje — Agent Immobilier Luxembourg | Reg-Immo">
+        <meta property="og:description" content="8 ans d'expérience dans l'immobilier au Luxembourg. Vente, estimation et accompagnement personnalisé à Luxembourg-Ville, Gasperich, Kirchberg et Strassen.">
+        <meta property="og:url" content="https://reg-immo.lu/about">
+        <meta property="og:image" content="https://reg-immo.lu/assets/images/reg-immo.png">
+        <!-- Twitter Card -->
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="Ilhame Hajaje — Agent Immobilier Luxembourg | Reg-Immo">
+        <meta name="twitter:description" content="8 ans d'expérience dans l'immobilier au Luxembourg.">
+        <meta name="twitter:image" content="https://reg-immo.lu/assets/images/reg-immo.png">
+        <!-- Schema.org -->
+        <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Person",
+            "name": "Ilhame Hajaje",
+            "jobTitle": "Agent Immobilier",
+            "worksFor": {
+                "@type": "RealEstateAgent",
+                "name": "Reg-Immo",
+                "url": "https://reg-immo.lu",
+                "telephone": "+352671158484",
+                "address": {
+                    "@type": "PostalAddress",
+                    "streetAddress": "380 route de Thionville",
+                    "addressLocality": "Hesperange",
+                    "postalCode": "5884",
+                    "addressRegion": "Hesperange",
+                    "addressCountry": "LU"
+                }
+            },
+            "url": "https://reg-immo.lu/about",
+            "knowsAbout": ["Immobilier Luxembourg", "Vente immobilière", "Estimation immobilière", "Gasperich", "Kirchberg", "Strassen"]
+        }
+        </script>
         <link rel="stylesheet" href="./about.css">
     </head>
     <body>
+
         <header>
-            <a class="real" href="../../../app/index.html"><img src="../../../assets/images/reg-immo-noir.png" alt="Logo Reg-Immo"></a>
-            <nav class="nav">
+            <a class="real" href="../../../app/index.html">
+                <img src="../../../assets/images/reg-immo-noir.png" alt="Logo Reg-Immo">
+            </a>
+            <nav class="nav" aria-label="Navigation principale">
                 <a href="../../../app/index.html">Accueil</a>
-                <a href="./about.html" class="active">À propos</a>
+                <a href="./about.html" class="active" aria-current="page">À propos</a>
                 <a href="../sales/sales.html">Biens à disposition</a>
                 <a href="../contact/contact.html">Contact</a>
                 <div class="lang-selector">
@@ -28,119 +77,158 @@
         </header>
 
         <main>
-            <div class="logo-wrapper">
-                <img src="../../../assets/images/reg-immo-noir.png" class="logo" alt="Reg-Immo — À propos">
-            </div>
 
-            <!-- Titre de page -->
-            <div class="about-hero reveal">
-                <h1 class="about-title">À Propos</h1>
-                <div class="about-gold-line"></div>
-                <p class="about-intro">
-                    Votre partenaire de confiance pour l'immobilier de prestige au Grand-Duché de Luxembourg
-                </p>
-            </div>
-
-            <!-- Séparateur or -->
-            <div class="about-separator reveal"></div>
-
-            <!-- Description agence -->
-            <div class="about-description reveal">
-                <p>
-                    Chez <strong>Reg-Immo</strong>, nous accompagnons particuliers et investisseurs dans leurs projets immobiliers au Luxembourg depuis plusieurs années. Notre approche repose sur une connaissance approfondie du marché local, une écoute attentive de vos besoins et un suivi personnalisé à chaque étape de votre démarche.
-                </p>
-                <p>
-                    Que vous souhaitiez acquérir une résidence principale, un bien d'investissement ou réaliser une estimation, notre équipe met tout en œuvre pour vous offrir un accompagnement sur mesure, <em>uniquement sur rendez-vous</em>.
-                </p>
-            </div>
-
-            <!-- 3 Piliers -->
-            <div class="about-pillars">
-                <div class="pillar reveal" style="transition-delay: 0.1s">
-                    <div class="pillar-number">01</div>
-                    <div class="pillar-icon">◆</div>
-                    <h2 class="pillar-title">Confiance</h2>
-                    <p class="pillar-text">
-                        Transparence et intégrité sont au cœur de chaque transaction. Nous vous fournissons toutes les informations nécessaires pour prendre la meilleure décision.
-                    </p>
+            <!-- ══ HERO ══════════════════════════════════ -->
+            <section class="hero">
+                <div class="hero-left">
+                    <div class="hero-content">
+                        <span class="hero-eyebrow">Agent Immobilier · Luxembourg</span>
+                        <h1 class="hero-name">Ilhame<br>Hajaje</h1>
+                        <div class="hero-rule"></div>
+                        <p class="hero-tagline">L'humain au cœur<br>de l'immobilier.</p>
+                        <div class="hero-stats">
+                            <div class="hero-stat">
+                                <span class="hero-stat-val">8<sup>+</sup></span>
+                                <span class="hero-stat-lbl">Ans de carrière<br>au Luxembourg</span>
+                            </div>
+                            <div class="hero-stat-sep"></div>
+                            <div class="hero-stat">
+                                <span class="hero-stat-val">100%</span>
+                                <span class="hero-stat-lbl">Grand-Duché<br>Secteur</span>
+                            </div>
+                            <div class="hero-stat-sep"></div>
+                            <div class="hero-stat">
+                                <span class="hero-stat-val">Vente</span>
+                                <span class="hero-stat-lbl">&amp; Estimation<br>Expertise</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="pillar reveal" style="transition-delay: 0.25s">
-                    <div class="pillar-number">02</div>
-                    <div class="pillar-icon">★</div>
-                    <h2 class="pillar-title">Excellence</h2>
-                    <p class="pillar-text">
-                        Nous sélectionnons des biens d'exception et assurons un service de qualité supérieure, digne des standards du marché immobilier luxembourgeois.
-                    </p>
+                <div class="hero-right">
+                    <img src="../../../assets/images/photo_2026-05-13_17-26-29.jpg" alt="Ilhame Hajaje — Fondatrice Reg-Immo" loading="lazy">
+                    <span class="hero-badge">Fondatrice · reg-immo</span>
                 </div>
-                <div class="pillar reveal" style="transition-delay: 0.4s">
-                    <div class="pillar-number">03</div>
-                    <div class="pillar-icon">❖</div>
-                    <h2 class="pillar-title">Accompagnement</h2>
-                    <p class="pillar-text">
-                        De la première visite à la signature, nous sommes présents à vos côtés. Un interlocuteur dédié, disponible et à l'écoute de votre projet.
-                    </p>
+            </section>
+
+            <!-- ══ INTRO CENTRÉ ═══════════════════════ -->
+            <div class="profil-intro">
+                <div class="profil-intro-inner reveal">
+                    <p>Bienvenue chez reg-immo. Je suis <strong>Ilhame Hajaje</strong>, agent immobilier passionnée, dédiée à l'accompagnement des propriétaires au Luxembourg.</p>
+                    <p>Ma mission est simple&nbsp;: transformer la vente de votre bien en une expérience sereine, efficace et valorisante, en plaçant la relation humaine au centre de chaque étape.</p>
                 </div>
             </div>
 
-            <!-- Séparateur or -->
-            <div class="about-separator reveal"></div>
+            <!-- ══ PROFIL ══════════════════════════════ -->
+            <div class="profil-wrap">
 
-            <!-- Services -->
-            <div class="about-services reveal">
-                <h2 class="services-title">Nos Services</h2>
-                <div class="services-grid">
-                    <div class="service-item">
-                        <div class="service-dot"></div>
-                        <span>Achat &amp; Vente de biens résidentiels</span>
+                <!-- 01 Parcours -->
+                <article class="profil-section reveal">
+                    <div class="profil-head">
+                        <span class="profil-num">01</span>
+                        <h2 class="profil-title">Mon Parcours</h2>
                     </div>
-                    <div class="service-item">
-                        <div class="service-dot"></div>
-                        <span>Locations longue durée</span>
+                    <div class="profil-body">
+                        <p>Issue d'une école de commerce, j'ai forgé ma rigueur et mon sens du contact au cours de plusieurs années d'expérience dans la vente de haut niveau.</p>
+                        <p>Depuis plus de 8 ans, j'évolue exclusivement dans le secteur de l'immobilier au Grand-Duché. Ce parcours hybride me permet aujourd'hui de combiner une approche commerciale affûtée avec une connaissance profonde du marché local.</p>
                     </div>
-                    <div class="service-item">
-                        <div class="service-dot"></div>
-                        <span>Estimation gratuite de votre propriété</span>
+                </article>
+
+                <div class="profil-divider"></div>
+
+                <!-- 03 Vision -->
+                <article class="profil-section profil-section--vision reveal">
+                    <div class="profil-head">
+                        <span class="profil-num">02</span>
+                        <h2 class="profil-title">Ma Vision</h2>
                     </div>
-                    <div class="service-item">
-                        <div class="service-dot"></div>
-                        <span>Réalisation de passeport énergétique</span>
+                    <div class="profil-body">
+                        <blockquote class="vision-quote">
+                            «&thinsp;Je crois en un immobilier plus humain&nbsp;: une approche basée sur l'écoute, le conseil sincère et une stratégie de vente chirurgicale, adaptée à l'âme de chaque propriété.&thinsp;»
+                        </blockquote>
                     </div>
-                    <div class="service-item">
-                        <div class="service-dot"></div>
-                        <span>Conseils en Home Staging</span>
+                </article>
+
+                <div class="profil-divider"></div>
+
+                <!-- 04 Pourquoi -->
+                <article class="profil-section reveal">
+                    <div class="profil-head">
+                        <span class="profil-num">03</span>
+                        <h2 class="profil-title">Pourquoi reg-immo</h2>
                     </div>
-                    <div class="service-item">
-                        <div class="service-dot"></div>
-                        <span>Promotions immobilières</span>
+                    <div class="profil-body">
+                        <p>Choisir reg-immo, c'est opter pour un accompagnement professionnel et personnalisé dans tout le Luxembourg.</p>
+                        <div class="features">
+                            <div class="feature reveal" style="transition-delay:.1s">
+                                <div class="feature-icon">◆</div>
+                                <div class="feature-content">
+                                    <h3 class="feature-title">Stratégie Dédiée</h3>
+                                    <p class="feature-text">Chaque bien est unique. Je développe des plans de vente sur-mesure pour maximiser votre prix de vente.</p>
+                                </div>
+                            </div>
+                            <div class="feature reveal" style="transition-delay:.22s">
+                                <div class="feature-icon">★</div>
+                                <div class="feature-content">
+                                    <h3 class="feature-title">Conseil Expert</h3>
+                                    <p class="feature-text">De l'estimation précise à la signature acte, je suis votre unique interlocutrice conseil.</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </div>
+                </article>
+
             </div>
 
-            <!-- CTA -->
-            <div class="about-cta reveal">
-                <p class="cta-text">Un projet immobilier ? Prenons rendez-vous.</p>
-                <div class="cta-buttons">
-                    <a href="../contact/contact.html" class="cta-primary">Nous contacter</a>
-                    <a href="../sales/sales.html" class="cta-secondary">Voir nos biens</a>
+            <!-- ══ CTA ════════════════════════════════ -->
+            <section class="profile-cta reveal">
+                <div class="profile-cta-inner">
+                    <span class="cta-overline">Votre projet de vente</span>
+                    <h2 class="cta-title">Prêt à valoriser<br>votre patrimoine&nbsp;?</h2>
+                    <p class="cta-sub">Discutons ensemble de votre projet partout au Luxembourg.<br>Je m'engage à vous offrir la clarté et l'expertise que vous méritez.</p>
+                    <div class="cta-actions">
+                        <a href="../contact/contact.html" class="btn-primary">Demander une estimation</a>
+                        <a href="../contact/contact.html" class="btn-ghost">Prendre contact</a>
+                    </div>
                 </div>
-            </div>
+            </section>
+
+
         </main>
 
         <footer>
-            <div class="footer-content">
-                <div class="footer-contact">
-                    <a href="tel:+352671158484">+352 671 158 484</a>
-                    <span class="separator">|</span>
-                    <a href="mailto:info@reg-immo.lu">info@reg-immo.lu</a>
-                    <span class="separator">|</span>
-                    <span class="rdv">Uniquement sur rendez-vous</span>
+            <div class="footer-inner">
+                <div class="footer-cols">
+                    <div class="footer-col footer-col--brand">
+                        <img src="../../../assets/images/reg-immo-noir.png" alt="Logo Reg-Immo" class="footer-logo" loading="lazy">
+                        <p class="footer-brand-text">REG-IMMO, l'immobilier qui vous ressemble.</p>
+                    </div>
+                    <div class="footer-col">
+                        <p class="footer-col-title">Contact</p>
+                        <address>
+                            <span>380 route de Thionville</span>
+                            <span>L-5884 Hesperange</span>
+                            <a href="tel:+352671158484">+352 671 158 484</a>
+                            <a href="mailto:info@reg-immo.lu">info@reg-immo.lu</a>
+                            <span>Sur rendez-vous exclusif</span>
+                            <span>Lun – Ven &nbsp;·&nbsp; 9h00 – 19h00</span>
+                        </address>
+                    </div>
+                    <div class="footer-col">
+                        <p class="footer-col-title">Navigation</p>
+                        <nav class="footer-nav" aria-label="Navigation secondaire">
+                            <a href="../../../app/index.html">Accueil</a>
+                            <a href="../sales/sales.html">Nos biens</a>
+                            <a href="./about.html">À propos</a>
+                            <a href="../contact/contact.html">Contact</a>
+                        </nav>
+                    </div>
                 </div>
-                <nav class="footer-legal">
-                    <a href="./legal-mentions.html">Mentions légales</a>
-                    <a href="./privacy-policy.html">Politique de confidentialité</a>
-                </nav>
-                <div class="footer-bottom">
-                    <span class="copyright">&copy; 2026 Reg-Immo S.A.R.L. Tous droits réservés.</span>
+                <div class="footer-bar">
+                    <span class="footer-copy">&copy; 2026 REG-IMMO SARL Luxembourg. Tous droits réservés.</span>
+                    <nav class="footer-legal" aria-label="Mentions légales">
+                        <a href="../legal-mentions.html">Mentions légales</a>
+                        <a href="../privacy-policy.html">Politique de confidentialité</a>
+                    </nav>
                 </div>
             </div>
         </footer>

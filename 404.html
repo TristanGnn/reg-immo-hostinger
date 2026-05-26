@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex">
+    <title>Page introuvable — Reg-Immo</title>
+    <style>
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            background: #faf7f2;
+            color: #1d1510;
+            font-family: Arial, sans-serif;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .wrap {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0;
+        }
+
+        .logo {
+            width: 380px;
+            max-width: 80vw;
+            height: auto;
+            margin-bottom: 52px;
+            opacity: 0.9;
+        }
+
+        .gold-line {
+            width: 40px;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, #b8962e, transparent);
+            margin-bottom: 32px;
+        }
+
+        .code {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 6rem;
+            font-weight: 400;
+            color: #e8ddd0;
+            line-height: 1;
+            letter-spacing: -4px;
+            margin-bottom: 24px;
+        }
+
+        .message {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 1.3rem;
+            color: #3a3020;
+            font-weight: 400;
+            margin-bottom: 8px;
+            letter-spacing: 0.3px;
+        }
+
+        .sous-message {
+            font-size: 0.85rem;
+            color: #9a9080;
+            letter-spacing: 0.5px;
+            margin-bottom: 44px;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            font-family: Arial, sans-serif;
+            font-size: 0.72rem;
+            font-weight: 700;
+            letter-spacing: 2.5px;
+            text-transform: uppercase;
+            color: #faf7f2;
+            background: #1a1208;
+            padding: 14px 36px;
+            border-radius: 2px;
+            text-decoration: none;
+            transition: background 0.3s ease, transform 0.2s ease;
+        }
+
+        .btn:hover {
+            background: #3a3a3a;
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <img class="logo" src="./assets/images/reg-immo-noir.png" alt="Reg-Immo">
+        <div class="gold-line"></div>
+        <p class="code">404</p>
+        <p class="message">Vous vous êtes perdus ?</p>
+        <p class="sous-message">Cette page n'existe pas.</p>
+        <a class="btn" href="/app/index.html">Nous vous raccompagnons à l'accueil</a>
+    </div>
+</body>
+</html>

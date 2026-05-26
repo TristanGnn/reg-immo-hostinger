@@ -2,18 +2,61 @@
 <html lang="fr">
     <head>
         <meta charset="UTF-8">
-        <title>Reg-Immo — Biens à disposition</title>
-        <meta name="description" content="Découvrez notre sélection de biens immobiliers au Luxembourg. Maisons, appartements et propriétés de prestige.">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Maisons & Appartements à Vendre au Luxembourg | Reg-Immo</title>
+        <meta name="description" content="Découvrez nos maisons et appartements à vendre au Luxembourg. Biens de prestige à Luxembourg-Ville, Kirchberg, Gasperich et Strassen. Consultez nos offres.">
+        <meta name="robots" content="index, follow">
+        <link rel="icon" href="../../../assets/images/favicon.svg" type="image/svg+xml">
+        <link rel="canonical" href="https://reg-immo.lu/sales">
+        <!-- Géolocalisation -->
+        <meta name="geo.region" content="LU">
+        <meta name="geo.placename" content="Luxembourg">
+        <meta name="geo.position" content="49.5752;6.1443">
+        <meta name="ICBM" content="49.5752, 6.1443">
+        <!-- Open Graph -->
+        <meta property="og:type" content="website">
+        <meta property="og:site_name" content="Reg-Immo">
+        <meta property="og:locale" content="fr_LU">
+        <meta property="og:title" content="Maisons & Appartements à Vendre au Luxembourg | Reg-Immo">
+        <meta property="og:description" content="Découvrez nos biens immobiliers à vendre au Luxembourg. Maisons, appartements et propriétés de prestige dans tout le Grand-Duché.">
+        <meta property="og:url" content="https://reg-immo.lu/sales">
+        <meta property="og:image" content="https://reg-immo.lu/assets/images/reg-immo.png">
+        <!-- Twitter Card -->
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="Maisons & Appartements à Vendre au Luxembourg | Reg-Immo">
+        <meta name="twitter:description" content="Biens immobiliers de prestige à vendre au Luxembourg.">
+        <meta name="twitter:image" content="https://reg-immo.lu/assets/images/reg-immo.png">
+        <!-- Schema.org -->
+        <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "RealEstateAgent",
+            "name": "Reg-Immo",
+            "url": "https://reg-immo.lu",
+            "telephone": "+352671158484",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "380 route de Thionville",
+                "addressLocality": "Hesperange",
+                "postalCode": "5884",
+                "addressRegion": "Hesperange",
+                "addressCountry": "LU"
+            },
+            "areaServed": [
+                "Luxembourg-Ville", "Gasperich", "Kirchberg", "Strassen",
+                "Hesperange", "Howald", "Redange", "Grand-Duché de Luxembourg"
+            ]
+        }
+        </script>
         <link rel="stylesheet" href="./style.css">
     </head>
     <body>
         <header>
             <a class="real" href="../../../app/index.html"><img src="../../../assets/images/reg-immo-noir.png" alt="Logo Reg-Immo"></a>
-            <nav class="nav">
+            <nav class="nav" aria-label="Navigation principale">
                 <a href="../../../app/index.html">Accueil</a>
                 <a href="../about/about.html">À propos</a>
-                <a href="./sales.html" class="active">Biens à disposition</a>
+                <a href="./sales.html" class="active" aria-current="page">Biens à disposition</a>
                 <a href="../contact/contact.html">Contact</a>
                 <div class="lang-selector">
                     <span class="current-lang">FR</span>
@@ -29,7 +72,7 @@
 
         <main>
             <div class="logo-wrapper">
-                <img src="../../../assets/images/reg-immo-noir.png" class="logo" alt="Reg-Immo — Biens à disposition">
+                <img src="../../../assets/images/reg-immo-noir.png" class="logo" alt="Reg-Immo — Biens à disposition" loading="lazy">
             </div>
 
             <div class="sales-header reveal">
@@ -59,7 +102,7 @@
                     <div class="search-field">
                         <label class="search-label">Type de bien</label>
                         <select class="search-select">
-                            <option value="" disabled selected>Tous les biens</option>
+                            <option value="">Tous les types</option>
                             <option value="maison">Maison</option>
                             <option value="appartement">Appartement</option>
                             <option value="terrain">Terrain</option>
@@ -78,105 +121,68 @@
                 </form>
             </div>
 
+            <template id="card-template">
+                <a href="../properties/bien.html" class="reveal">
+                    <article class="vitrine">
+                        <div class="vitrine-badge"></div>
+                        <img src="" alt="" loading="lazy">
+                        <div class="description"></div>
+                        <div class="infos">
+                            <div class="prix"></div>
+                            <div class="icones">
+                                <div class="icone"><span class="nbre nbre-chambres"></span><img src="../../../assets/images/icochbre.png" alt="chambres" loading="lazy"></div>
+                                <div class="icone"><span class="nbre nbre-m2"></span><img src="../../../assets/images/icom2.png" alt="m²" loading="lazy"></div>
+                                <div class="icone"><span class="nbre nbre-sdb"></span><img src="../../../assets/images/icosdb.png" alt="salle de bains" loading="lazy"></div>
+                            </div>
+                        </div>
+                    </article>
+                </a>
+            </template>
+
             <div class="biens-section">
-            <section class="tableau">
-                <a href="../properties/bien.html" class="reveal" style="transition-delay: 0.1s">
-                    <article class="vitrine">
-                        <div class="vitrine-badge">À VENDRE</div>
-                        <img src="../../../assets/images/bien6.jpg" alt="Appartement Luxembourg-Ville">
-                        <div class="description">Appartement dans le centre de Luxembourg-Ville</div>
-                        <div class="infos">
-                            <div class="prix">100 000 €</div>
-                            <div class="icones">
-                                <div class="icone">
-                                    <span class="nbre">3</span>
-                                    <img src="../../../assets/images/icochbre.png" alt="chambres">
-                                </div>
-                                <div class="icone">
-                                    <span class="nbre">5</span>
-                                    <img src="../../../assets/images/icom2.png" alt="pièces">
-                                </div>
-                                <div class="icone">
-                                    <span class="nbre">9</span>
-                                    <img src="../../../assets/images/icosdb.png" alt="salle de bains">
-                                </div>
-                            </div>
-                        </div>
-                    </article>
-                </a>
-
-                <a href="../properties/bien.html" class="reveal" style="transition-delay: 0.25s">
-                    <article class="vitrine">
-                        <div class="vitrine-badge">À VENDRE</div>
-                        <img src="../../../assets/images/bien7.jpg" alt="Appartement Luxembourg-Ville">
-                        <div class="description">Appartement dans le centre de Luxembourg-Ville</div>
-                        <div class="infos">
-                            <div class="prix">100 000 €</div>
-                            <div class="icones">
-                                <div class="icone">
-                                    <span class="nbre">3</span>
-                                    <img src="../../../assets/images/icochbre.png" alt="chambres">
-                                </div>
-                                <div class="icone">
-                                    <span class="nbre">5</span>
-                                    <img src="../../../assets/images/icom2.png" alt="pièces">
-                                </div>
-                                <div class="icone">
-                                    <span class="nbre">9</span>
-                                    <img src="../../../assets/images/icosdb.png" alt="salle de bains">
-                                </div>
-                            </div>
-                        </div>
-                    </article>
-                </a>
-
-                <a href="../properties/bien.html" class="reveal" style="transition-delay: 0.4s">
-                    <article class="vitrine">
-                        <div class="vitrine-badge">À VENDRE</div>
-                        <img src="../../../assets/images/bien5.jpg" alt="Appartement Luxembourg-Ville">
-                        <div class="description">Appartement dans le centre de Luxembourg-Ville</div>
-                        <div class="infos">
-                            <div class="prix">100 000 €</div>
-                            <div class="icones">
-                                <div class="icone">
-                                    <span class="nbre">3</span>
-                                    <img src="../../../assets/images/icochbre.png" alt="chambres">
-                                </div>
-                                <div class="icone">
-                                    <span class="nbre">5</span>
-                                    <img src="../../../assets/images/icom2.png" alt="pièces">
-                                </div>
-                                <div class="icone">
-                                    <span class="nbre">9</span>
-                                    <img src="../../../assets/images/icosdb.png" alt="salle de bains">
-                                </div>
-                            </div>
-                        </div>
-                    </article>
-                </a>
-            </section>
+                <section class="tableau" id="tableau"></section>
+                <p class="aucun-bien" id="aucun-bien" style="display:none;text-align:center;padding:60px 20px;color:#9a9080;font-family:Arial,sans-serif;">Aucun bien disponible pour le moment.</p>
             </div>
         </main>
 
         <footer>
-            <div class="footer-content">
-                <div class="footer-contact">
-                    <a href="tel:+352671158484">+352 671 158 484</a>
-                    <span class="separator">|</span>
-                    <a href="mailto:info@reg-immo.lu">info@reg-immo.lu</a>
-                    <span class="separator">|</span>
-                    <span class="rdv">Uniquement sur rendez-vous</span>
+            <div class="footer-inner">
+                <div class="footer-cols">
+                    <div class="footer-col">
+                        <img src="../../../assets/images/reg-immo-noir.png" alt="Logo Reg-Immo" class="footer-logo" loading="lazy">
+                        <p class="footer-brand-text">REG-IMMO, l'immobilier qui vous ressemble.</p>
+                    </div>
+                    <div class="footer-col">
+                        <p class="footer-col-title">Contact</p>
+                        <address>
+                            <span>380 route de Thionville</span>
+                            <span>L-5884 Hesperange</span>
+                            <a href="tel:+352671158484">+352 671 158 484</a>
+                            <a href="mailto:info@reg-immo.lu">info@reg-immo.lu</a>
+                            <span>Lun – Ven &nbsp;·&nbsp; 9h00 – 19h00</span>
+                        </address>
+                    </div>
+                    <div class="footer-col">
+                        <p class="footer-col-title">Navigation</p>
+                        <nav class="footer-nav" aria-label="Navigation secondaire">
+                            <a href="../../../app/index.html">Accueil</a>
+                            <a href="./sales.html">Nos biens</a>
+                            <a href="../about/about.html">À propos</a>
+                            <a href="../contact/contact.html">Contact</a>
+                        </nav>
+                    </div>
                 </div>
-                <nav class="footer-legal">
-                    <a href="./legal-mentions.html">Mentions légales</a>
-                    <a href="./privacy-policy.html">Politique de confidentialité</a>
-                </nav>
-                <div class="footer-bottom">
-                    <span class="copyright">&copy; 2026 Reg-Immo S.A.R.L. Tous droits réservés.</span>
+                <div class="footer-bar">
+                    <span class="footer-copy">&copy; 2026 REG-IMMO SARL Luxembourg. Tous droits réservés.</span>
+                    <nav class="footer-legal" aria-label="Mentions légales">
+                        <a href="../legal-mentions.html">Mentions légales</a>
+                        <a href="../privacy-policy.html">Politique de confidentialité</a>
+                    </nav>
                 </div>
             </div>
         </footer>
 
+        <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js"></script>
         <script src="./sales.js"></script>
     </body>
 </html>

@@ -2,19 +2,72 @@
 <html lang="fr">
     <head>
         <meta charset="UTF-8">
-        <title>reg-immo - Contact</title>
-        <meta name="description" content="à définir">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contactez Reg-Immo — Agence Immobilière Luxembourg</title>
+        <meta name="description" content="Contactez Reg-Immo pour une estimation gratuite au Luxembourg. Vente et achat de maisons et appartements de prestige. Appelez le +352 671 158 484.">
+        <meta name="robots" content="index, follow">
+        <link rel="icon" href="../../../assets/images/favicon.svg" type="image/svg+xml">
+        <link rel="canonical" href="https://reg-immo.lu/contact">
+        <!-- Géolocalisation -->
+        <meta name="geo.region" content="LU">
+        <meta name="geo.placename" content="Howald, Luxembourg">
+        <meta name="geo.position" content="49.5752;6.1443">
+        <meta name="ICBM" content="49.5752, 6.1443">
+        <!-- Open Graph -->
+        <meta property="og:type" content="website">
+        <meta property="og:site_name" content="Reg-Immo">
+        <meta property="og:locale" content="fr_LU">
+        <meta property="og:title" content="Contactez Reg-Immo — Agence Immobilière Luxembourg">
+        <meta property="og:description" content="Estimation gratuite, achat ou vente de bien immobilier au Luxembourg. Contactez-nous au +352 671 158 484.">
+        <meta property="og:url" content="https://reg-immo.lu/contact">
+        <meta property="og:image" content="https://reg-immo.lu/assets/images/reg-immo.png">
+        <!-- Twitter Card -->
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="Contactez Reg-Immo — Agence Immobilière Luxembourg">
+        <meta name="twitter:description" content="Estimation gratuite, achat ou vente de bien immobilier au Luxembourg.">
+        <meta name="twitter:image" content="https://reg-immo.lu/assets/images/reg-immo.png">
+        <!-- Schema.org -->
+        <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "RealEstateAgent",
+            "name": "Reg-Immo",
+            "url": "https://reg-immo.lu",
+            "telephone": "+352671158484",
+            "contactPoint": {
+                "@type": "ContactPoint",
+                "telephone": "+352671158484",
+                "contactType": "customer service",
+                "availableLanguage": ["French", "English", "Arabic"]
+            },
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "380 route de Thionville",
+                "addressLocality": "Hesperange",
+                "postalCode": "5884",
+                "addressRegion": "Hesperange",
+                "addressCountry": "LU"
+            },
+            "geo": {
+                "@type": "GeoCoordinates",
+                "latitude": 49.5752,
+                "longitude": 6.1443
+            }
+        }
+        </script>
         <link rel="stylesheet" href="./contact.css">
     </head>
     <body>
+
         <header>
-            <a class="real" href="../../../app/index.html"><img src="../../../assets/images/reg-immo-noir.png" alt="Logo Reg-Immo"></a>
-            <nav class="nav">
+            <a class="real" href="../../../app/index.html">
+                <img src="../../../assets/images/reg-immo-noir.png" alt="Logo Reg-Immo">
+            </a>
+            <nav class="nav" aria-label="Navigation principale">
                 <a href="../../../app/index.html">Accueil</a>
                 <a href="../about/about.html">À propos</a>
                 <a href="../sales/sales.html">Biens à disposition</a>
-                <a href="./contact.html" class="active">Contact</a>
+                <a href="./contact.html" class="active" aria-current="page">Contact</a>
                 <div class="lang-selector">
                     <span class="current-lang">FR</span>
                     <div class="lang-dropdown">
@@ -28,47 +81,42 @@
         </header>
 
         <main>
-            <div class="logo-wrapper">
-                <img src="../../../assets/images/realesteate.png" class="logo" alt="logo of reg-immo, logo de reg-immo, reg-immo Logo, immobilier luxembourg">
-            </div>
-            <div class="sepa"></div>
-            <div class="milieu">
-                <div class="fond">
-                    <div class="real">Pour mener à bien votre projet d’achat ou de vente, <span class="estate">The Real Estate Group</span> vous propose un accompagnement personnalisé adapté à vos besoins.</div>
 
-                    <div class="av">
-                        <div class="avantage">- Estimation gratuite de votre propriété -</div>
-                        <div class="avantage"> - Réalisation de passeport énergétique -</div>
-                        <div class="avantage"> - Conseils offerts en Home Staging -</div>
-                    </div>
-                </div> 
-                <div class="separ"></div>
+            <!-- ── HERO ─────────────────────────────── -->
+            <section class="contact-hero">
+                <span class="hero-eyebrow">Reg-Immo · Luxembourg</span>
+                <h1 class="hero-title">Contact</h1>
+                <div class="hero-line"></div>
+                <p class="hero-sub">Uniquement sur rendez-vous — répondons à votre projet ensemble.</p>
+            </section>
 
-                <!-- FORMULAIRE DE CONTACT -->
-                <div class="nous-contacter">
-                    <div class="nous-contacter-title">Nous contacter</div>
-                    <div class="nous-contacter-line"></div>
-                </div>
-                <div class="form-contact-wrap">
+            <!-- ── CONTENU ───────────────────────────── -->
+            <div class="contact-wrap">
+
+                <!-- FORMULAIRE -->
+                <div class="contact-form-col reveal">
+                    <span class="col-eyebrow">Nous écrire</span>
+                    <h2 class="col-title">Votre message</h2>
+
                     <form id="contactForm" novalidate>
                         <div class="form-row">
                             <div class="form-group">
-                                <label for="prenom">Prénom <span class="required">*</span></label>
-                                <input type="text" id="prenom" name="prenom" placeholder="Jean" required>
+                                <label for="prenom">Prénom <span class="req">*</span></label>
+                                <input type="text" id="prenom" name="prenom" placeholder="Jean" required minlength="2" maxlength="50" autocomplete="given-name">
                             </div>
                             <div class="form-group">
-                                <label for="nom">Nom <span class="required">*</span></label>
-                                <input type="text" id="nom" name="nom" placeholder="Dupont" required>
+                                <label for="nom">Nom <span class="req">*</span></label>
+                                <input type="text" id="nom" name="nom" placeholder="Dupont" required minlength="2" maxlength="50" autocomplete="family-name">
                             </div>
                         </div>
                         <div class="form-row">
                             <div class="form-group">
-                                <label for="email">E-mail <span class="required">*</span></label>
-                                <input type="email" id="email" name="email" placeholder="jean.dupont@example.com" required>
+                                <label for="email">E-mail <span class="req">*</span></label>
+                                <input type="email" id="email" name="email" placeholder="jean.dupont@example.com" required maxlength="100" autocomplete="email">
                             </div>
                             <div class="form-group">
-                                <label for="telephone">Téléphone <span class="required">*</span></label>
-                                <input type="tel" id="telephone" name="telephone" placeholder="+352 XXX XXX XXX" required>
+                                <label for="telephone">Téléphone <span class="req">*</span></label>
+                                <input type="tel" id="telephone" name="telephone" placeholder="+352 XXX XXX XXX" required minlength="6" maxlength="25" autocomplete="tel">
                             </div>
                         </div>
                         <div class="form-group">
@@ -85,73 +133,117 @@
                             </select>
                         </div>
                         <div class="form-group">
-                            <label for="message">Message <span class="required">*</span></label>
-                            <textarea id="message" name="message" placeholder="Décrivez votre projet ou votre demande..."></textarea>
+                            <label for="message">Message <span class="req">*</span></label>
+                            <textarea id="message" name="message" placeholder="Décrivez votre projet ou votre demande..." rows="5" required minlength="10" maxlength="2000"></textarea>
                         </div>
-                        <div class="form-submit-wrap">
-                            <button type="submit" class="form-submit"><span>Envoyer le message</span></button>
-                        </div>
+                        <button type="submit" class="form-submit">Envoyer le message</button>
+                        <p class="form-rgpd">Vos données sont utilisées uniquement pour vous recontacter. <a href="../privacy-policy.html">Politique de confidentialité</a></p>
                     </form>
+
                     <div class="form-success" id="formSuccess">
                         <span class="success-icon">◆</span>
-                        <div class="success-title">Message envoyé</div>
-                        <p class="success-text">Merci pour votre message.<br>Notre équipe vous contactera dans les plus brefs délais.</p>
+                        <div class="success-title">Message envoyé !</div>
+                        <p class="success-text">Merci pour votre message — nous vous rappelons sous 24h.</p>
                     </div>
                 </div>
 
-                <div class="contenu">
-                    <div class="gauche">
-                        <div class="haut">
-                            <div class="tre">Coordonnées :</div>
-                            <div class="coordonee">
-                                <div class="tel">Téléphone : <a class="deco" href="tel:+352671158484"> +352 671 158 484 </a></div>
-                                <div class="enveloppe">E-mail : <a class="deco" href="mailto:info@reg-immo.lu">info@reg-immo.lu</a></div>
-                            </div>
-                        </div>
-                        <div class="separa"></div>
-                        <div class="activite">
-                            <div class="tre">Activités :</div>
-                            <div class="act">
-                                <div class="conseils">Achats / Ventes et Locations de Biens Immobiliers</div>
-                                <div class="conseils">Promotions Immobilières</div>
-                                <div class="conseils">Conseil et estimation</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="droite">
-                        <div class="titre">Localisation :</div>
-                        <div class="plan">
-                            <div class="map">
-                                <iframe width="400" height="320" src="https://www.openstreetmap.org/export/embed.html?bbox=6.150214076042176%2C49.574690260509044%2C6.155471205711366%2C49.57677389164205&amp;layer=mapnik&amp;marker=49.57573208719525%2C6.15284264087677" style="border: 2px solid black">
-                                </iframe>
-                            </div>
+                <!-- INFOS -->
+                <div class="contact-info-col reveal" style="transition-delay:.15s">
 
-                            <div class="adresse">
-                                <div class="agence">The Real Estate Group</div>
-                                <div class="rue">380 Route de Thionville</div>
-                                <div class="ville">L-5884 - HESPERANGE (Luxembourg)</div>
+                    <div class="info-block">
+                        <span class="col-eyebrow">Nous joindre</span>
+                        <h2 class="col-title">Coordonnées</h2>
+                        <div class="info-items">
+                            <div class="info-item">
+                                <span class="info-label">Téléphone</span>
+                                <a href="tel:+352671158484" class="info-value">+352 671 158 484</a>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-label">E-mail</span>
+                                <a href="mailto:info@reg-immo.lu" class="info-value">info@reg-immo.lu</a>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-label">Disponibilité</span>
+                                <span class="info-value">Sur rendez-vous exclusif</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="info-label">Horaires</span>
+                                <span class="info-value">Lun – Ven &nbsp;·&nbsp; 9h00 – 19h00</span>
                             </div>
                         </div>
                     </div>
+
+                    <div class="info-divider"></div>
+
+                    <div class="info-block">
+                        <span class="info-label">Adresse</span>
+                        <address>
+                            <strong>Reg-Immo</strong>
+                            <span>380 route de Thionville</span>
+                            <span>L-5884 Hesperange, Luxembourg</span>
+                        </address>
+                    </div>
+
+                    <div class="map-wrap">
+                        <iframe
+                            src="https://www.openstreetmap.org/export/embed.html?bbox=6.150214076042176%2C49.574690260509044%2C6.155471205711366%2C49.57677389164205&layer=mapnik&marker=49.57573208719525%2C6.15284264087677"
+                            title="Localisation Reg-Immo"
+                            loading="lazy">
+                        </iframe>
+                    </div>
+
+                    <div class="info-divider"></div>
+
+                    <div class="info-block">
+                        <span class="col-eyebrow">Ce que nous faisons</span>
+                        <ul class="services-list">
+                            <li>Achat &amp; Vente de biens résidentiels</li>
+                            <li>Locations longue durée</li>
+                            <li>Estimation gratuite de votre propriété</li>
+                            <li>Passeport énergétique</li>
+                            <li>Conseils en Home Staging</li>
+                            <li>Promotions immobilières</li>
+                        </ul>
+                    </div>
+
                 </div>
-            
             </div>
+
         </main>
+
         <footer>
-            <div class="footer-content">
-                <div class="footer-contact">
-                    <a href="tel:+352671158484">+352 671 158 484</a>
-                    <span class="separator">|</span>
-                    <a href="mailto:info@reg-immo.lu">info@reg-immo.lu</a>
-                    <span class="separator">|</span>
-                    <span class="rdv">Uniquement sur rendez-vous</span>
+            <div class="footer-inner">
+                <div class="footer-cols">
+                    <div class="footer-col">
+                        <img src="../../../assets/images/reg-immo-noir.png" alt="Logo Reg-Immo" class="footer-logo" loading="lazy">
+                        <p class="footer-brand-text">REG-IMMO, l'immobilier qui vous ressemble.</p>
+                    </div>
+                    <div class="footer-col">
+                        <p class="footer-col-title">Contact</p>
+                        <address class="footer-address">
+                            <span>380 route de Thionville</span>
+                            <span>L-5884 Hesperange</span>
+                            <a href="tel:+352671158484">+352 671 158 484</a>
+                            <a href="mailto:info@reg-immo.lu">info@reg-immo.lu</a>
+                            <span>Lun – Ven &nbsp;·&nbsp; 9h00 – 19h00</span>
+                        </address>
+                    </div>
+                    <div class="footer-col">
+                        <p class="footer-col-title">Navigation</p>
+                        <nav class="footer-nav" aria-label="Navigation secondaire">
+                            <a href="../../../app/index.html">Accueil</a>
+                            <a href="../sales/sales.html">Nos biens</a>
+                            <a href="../about/about.html">À propos</a>
+                            <a href="./contact.html">Contact</a>
+                        </nav>
+                    </div>
                 </div>
-                <nav class="footer-legal">
-                    <a href="./legal-mentions.html">Mentions légales</a>
-                    <a href="./privacy-policy.html">Politique de confidentialité</a>
-                </nav>
-                <div class="footer-bottom">
-                    <span class="copyright">&copy; 2026 Reg-Immo S.A.R.L. Tous droits réservés.</span>
+                <div class="footer-bar">
+                    <span class="footer-copy">&copy; 2026 REG-IMMO SARL Luxembourg. Tous droits réservés.</span>
+                    <nav class="footer-legal" aria-label="Mentions légales">
+                        <a href="../legal-mentions.html">Mentions légales</a>
+                        <a href="../privacy-policy.html">Politique de confidentialité</a>
+                    </nav>
                 </div>
             </div>
         </footer>

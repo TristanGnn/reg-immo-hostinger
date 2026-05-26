@@ -2,19 +2,61 @@
 <html lang="fr">
     <head>
         <meta charset="UTF-8">
-        <title>reg-immo</title>
-        <meta name="description" content="à définir">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bien immobilier au Luxembourg | Reg-Immo</title>
+        <meta name="description" content="Découvrez ce bien immobilier proposé par Reg-Immo, votre agence immobilière au Luxembourg.">
+        <meta name="robots" content="index, follow">
+        <link rel="icon" href="../../../assets/images/favicon.svg" type="image/svg+xml">
+        <link rel="canonical" href="https://reg-immo.lu/bien">
+        <meta property="og:url" content="https://reg-immo.lu/bien">
+        <!-- Géolocalisation -->
+        <meta name="geo.region" content="LU">
+        <meta name="geo.placename" content="Luxembourg">
+        <meta name="geo.position" content="49.5752;6.1443">
+        <meta name="ICBM" content="49.5752, 6.1443">
+        <!-- Open Graph (mis à jour dynamiquement par bien.js) -->
+        <meta property="og:type" content="website">
+        <meta property="og:site_name" content="Reg-Immo">
+        <meta property="og:locale" content="fr_LU">
+        <meta property="og:title" content="Bien immobilier au Luxembourg | Reg-Immo">
+        <meta property="og:description" content="Découvrez ce bien immobilier proposé par Reg-Immo au Luxembourg.">
+        <meta property="og:image" content="https://reg-immo.lu/assets/images/reg-immo.png">
+        <!-- Twitter Card -->
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="Bien immobilier au Luxembourg | Reg-Immo">
+        <meta name="twitter:description" content="Découvrez ce bien immobilier proposé par Reg-Immo au Luxembourg.">
+        <meta name="twitter:image" content="https://reg-immo.lu/assets/images/reg-immo.png">
+        <!-- Schema.org -->
+        <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "WebPage",
+            "name": "Bien immobilier au Luxembourg",
+            "description": "Découvrez ce bien immobilier proposé par Reg-Immo, votre agence immobilière au Luxembourg.",
+            "publisher": {
+                "@type": "RealEstateAgent",
+                "name": "Reg-Immo",
+                "url": "https://reg-immo.lu",
+                "telephone": "+352671158484",
+                "address": {
+                    "@type": "PostalAddress",
+                    "streetAddress": "380 route de Thionville",
+                    "addressLocality": "Hesperange",
+                    "postalCode": "5884",
+                    "addressCountry": "LU"
+                }
+            }
+        }
+        </script>
         <link rel="stylesheet" href="./bien.css">
-        <link href="../../../assets/fonts/Markazi_Text/MarkaziText-VariableFont_wght.ttf" rel="stylesheet">
     </head>
     <body>
         <header>
             <a class="real" href="../../../app/index.html"><img src="../../../assets/images/reg-immo-noir.png" alt="Logo Reg-Immo"></a>
-            <nav class="nav">
+            <nav class="nav" aria-label="Navigation principale">
                 <a href="../../../app/index.html">Accueil</a>
                 <a href="../about/about.html">À propos</a>
-                <a href="../sales/sales.html" class="active">Biens à disposition</a>
+                <a href="../sales/sales.html" class="active" aria-current="page">Biens à disposition</a>
                 <a href="../contact/contact.html">Contact</a>
                 <div class="lang-selector">
                     <span class="current-lang">FR</span>
@@ -29,20 +71,26 @@
         </header>
         <main>
             <article class="presentation">
-                <div class="pg">
-                    <div class="pgh">
-                        À VENDRE – MAISON 3 FAÇADES À RÉNOVER – 5 CHAMBRES – GASPERICH - 1 100 000 €
-                    </div>
-                    <div class="pgm"><img src="../../../assets/images/g (7).png" alt=""></div>
-                    <div class="pgb">
-                        <div class="pgb1"><img src="../../../assets/images/g (1).png" alt=""></div>
-                        <div class="pgb2"><img src="../../../assets/images/g (2).png" alt=""></div>
-                        <div class="pgb3"><img src="../../../assets/images/g (3).png" alt=""></div>
+                <div class="pgh">
+                    <span class="pgh-statut">À VENDRE</span>
+                    <div class="pgh-ligne">
+                        <h1 class="pgh-titre">Maison 3 façades à rénover – 5 chambres – Gasperich</h1>
+                        <span class="pgh-prix">1 100 000 €</span>
                     </div>
                 </div>
-                <div class="pd">
-                    <div class="pdh"><img src="../../../assets/images/g (4).png" alt=""></div>
-                    <div class="pdb"><img src="../../../assets/images/g (5).png" alt=""></div>
+                <div class="photo-grid">
+                    <div class="pg">
+                        <div class="pgm"><img src="../../../assets/images/g (7).png" alt="Photo principale du bien immobilier"></div>
+                        <div class="pgb">
+                            <div class="pgb1"><img src="../../../assets/images/g (1).png" alt="Vue intérieure du bien" loading="lazy"></div>
+                            <div class="pgb2"><img src="../../../assets/images/g (2).png" alt="Vue intérieure du bien" loading="lazy"></div>
+                            <div class="pgb3"><img src="../../../assets/images/g (3).png" alt="Vue intérieure du bien" loading="lazy"></div>
+                        </div>
+                    </div>
+                    <div class="pd">
+                        <div class="pdh"><img src="../../../assets/images/g (4).png" alt="Vue complémentaire du bien" loading="lazy"></div>
+                        <div class="pdb"><img src="../../../assets/images/g (5).png" alt="Vue complémentaire du bien" loading="lazy"></div>
+                    </div>
                 </div>
             </article>
             <div class="separateur">
@@ -59,62 +107,11 @@
                         <div class="dessous">
                             <div class="surface">
                                 <div class="nom">Surfaces :</div>
-                                <div class="elements">
-                                        
-                                    <div class="grp">
-                                        <div class="piece">Cuisine :</div>
-                                        <div class="chiffre">190m²</div>
-                                    </div>
-                                    <div class="grp">
-                                        <div class="piece">Salon :</div>
-                                        <div class="chiffre">25m²</div>
-                                    </div>
-                                    <div class="grp">
-                                        <div class="piece">Salle à manger :</div>
-                                        <div class="chiffre">257m²</div>
-                                    </div>
-                                    <div class="grp">
-                                        <div class="piece">salle de bains :</div>
-                                        <div class="chiffre">425m²</div>
-                                    </div>
-                                    <div class="grp">
-                                        <div class="piece">Salon :</div>
-                                        <div class="chiffre">235m²</div>
-                                    </div>
-                                    <div class="grp">
-                                        <div class="piece">Salon :</div>
-                                        <div class="chiffre">259m²</div>
-                                    </div>                                   
-                                </div>
+                                <div class="elements"></div>
                             </div>
                             <div class="hauteur">
                                 <div class="nom">Hauteurs :</div>
-                                <div class="elements">
-                                    <div class="grp">
-                                        <div class="piece">Cuisine :</div>
-                                        <div class="chiffre">1,9m</div>
-                                    </div>
-                                    <div class="grp">
-                                        <div class="piece">Salon :</div>
-                                        <div class="chiffre">2,5m</div>
-                                    </div>
-                                    <div class="grp">
-                                        <div class="piece">Salle à manger :</div>
-                                        <div class="chiffre">2,7m</div>
-                                    </div>
-                                    <div class="grp">
-                                        <div class="piece">salle de bains :</div>
-                                        <div class="chiffre">4,5m</div>
-                                    </div>
-                                    <div class="grp">
-                                        <div class="piece">Salon :</div>
-                                        <div class="chiffre">2,3m</div>
-                                    </div>
-                                    <div class="grp">
-                                        <div class="piece">Salon :</div>
-                                        <div class="chiffre">5m</div>
-                                    </div>                                   
-                                </div>
+                                <div class="elements"></div>
                             </div>
                         </div>
                     </div>
@@ -127,73 +124,94 @@
                         </div>
                         <div class="name">
                             <div class="prenom">
-                                <label for="prenom">Prénom</label>
-                                <input type="text" id="prenom" name="prenom" required title="Veuillez entrer votre prénom">
+                                <label for="bien-prenom">Prénom</label>
+                                <input type="text" id="bien-prenom" name="prenom" required minlength="2" maxlength="50" autocomplete="given-name">
                             </div>
                             <div class="noms">
-                                <label for="nom">Nom</label>
-                                <input type="text" id="nom" name="nom" required title="Veuillez entrer votre nom">
-                            </div>                           
+                                <label for="bien-nom">Nom</label>
+                                <input type="text" id="bien-nom" name="nom" required minlength="2" maxlength="50" autocomplete="family-name">
+                            </div>
                         </div>
                         <div class="tel">
-                            <label for="tel">Téléphone</label>
-                            <input type="tel" id="tel" name="tel" required title="Veuillez entrer votre numéro de téléphone">
+                            <label for="bien-tel">Téléphone</label>
+                            <input type="tel" id="bien-tel" name="tel" required minlength="6" maxlength="25" autocomplete="tel">
                         </div>
                         <div class="email">
-                            <label for="email">Courriel</label>
-                            <input type="email" id="email" name="email" required title="Veuillez entrer votre courriel">
+                            <label for="bien-email">Courriel</label>
+                            <input type="email" id="bien-email" name="email" required maxlength="100" autocomplete="email">
                         </div>
                         <div class="message">
-                            <label for="message">Message (faculatif)</label>
-                            <input type="text" id="message" name="message">
+                            <label for="bien-message">Message (facultatif)</label>
+                            <input type="text" id="bien-message" name="message" maxlength="2000">
                         </div>
                         <div class="envoyer">
                             <button class="send" id="send" name="send"><span>Envoyer</span></button>
                         </div>
-                    </div>
-                    <div class="coordonee">
-                        <div class="contact">Nous contacter :</div>
-                        <div class="telephone">
-                            <a class="a" href="tel:+352671158484">+352 671 158 484</a>
+                        <div id="bien-success" style="display:none;margin-top:16px;padding:14px;background:#f0faf4;border-radius:6px;border-left:3px solid #1a7a4a;color:#1a7a4a;font-weight:600;">
+                            ✓ Message envoyé — nous vous recontacterons rapidement.
                         </div>
-                        <div class="mail">
-                            <a class="a" href="mailto:info@reg-immo.lu">info@reg-immo.lu</a>
-                        </div>
-                        <div class="horaire">Uniquement sur rendez-vous</div>
+                        <div id="bien-error" style="display:none;margin-top:12px;color:#c83c3c;font-size:0.85rem;"></div>
                     </div>
                 </div>
             </article>
         </main>
         <footer>
-            <div class="footer-content">
-            <div class="footer-contact">
-                <a href="tel:+352671158484">+352 671 158 484</a>
-                <span class="separator">|</span>
-                <a href="mailto:info@reg-immo.lu">info@reg-immo.lu</a>
-                <span class="separator">|</span>
-                <span class="rdv">Uniquement sur rendez-vous</span>
+            <div class="footer-inner">
+                <div class="footer-cols">
+                    <div class="footer-col">
+                        <img src="../../../assets/images/reg-immo-noir.png" alt="Logo Reg-Immo" class="footer-logo" loading="lazy">
+                        <p class="footer-brand-text">REG-IMMO, l'immobilier qui vous ressemble.</p>
+                    </div>
+                    <div class="footer-col">
+                        <p class="footer-col-title">Contact</p>
+                        <address>
+                            <span>380 route de Thionville</span>
+                            <span>L-5884 Hesperange</span>
+                            <a href="tel:+352671158484">+352 671 158 484</a>
+                            <a href="mailto:info@reg-immo.lu">info@reg-immo.lu</a>
+                            <span>Lun – Ven &nbsp;·&nbsp; 9h00 – 19h00</span>
+                        </address>
+                    </div>
+                    <div class="footer-col">
+                        <p class="footer-col-title">Navigation</p>
+                        <nav class="footer-nav" aria-label="Navigation secondaire">
+                            <a href="../../../app/index.html">Accueil</a>
+                            <a href="../sales/sales.html">Nos biens</a>
+                            <a href="../about/about.html">À propos</a>
+                            <a href="../contact/contact.html">Contact</a>
+                        </nav>
+                    </div>
+                </div>
+                <div class="footer-bar">
+                    <span class="footer-copy">&copy; 2026 REG-IMMO SARL Luxembourg. Tous droits réservés.</span>
+                    <nav class="footer-legal" aria-label="Mentions légales">
+                        <a href="../legal-mentions.html">Mentions légales</a>
+                        <a href="../privacy-policy.html">Politique de confidentialité</a>
+                    </nav>
+                </div>
             </div>
-            <nav class="footer-legal">
-                <a href="./legal-mentions.html">Mentions légales</a>
-                <a href="./privacy-policy.html">Politique de confidentialité</a>
-            </nav>
-            <div class="footer-bottom">
-                <span class="copyright">&copy; 2026 Reg-Immo S.A.R.L. Tous droits réservés.</span>
-            </div>
-        </div>
         </footer>
 
         <!-- LIGHTBOX -->
         <div class="lightbox-overlay" id="lightbox">
-            <button class="lightbox-close" id="lightboxClose">&times;</button>
-            <button class="lightbox-prev" id="lightboxPrev">&#8592;</button>
+            <button class="lightbox-close" id="lightboxClose" aria-label="Fermer la galerie">&times;</button>
+            <button class="lightbox-prev" id="lightboxPrev" aria-label="Photo précédente">&#8592;</button>
             <div class="lightbox-img-wrapper">
                 <img src="" alt="" id="lightboxImg">
             </div>
-            <button class="lightbox-next" id="lightboxNext">&#8594;</button>
+            <button class="lightbox-next" id="lightboxNext" aria-label="Photo suivante">&#8594;</button>
             <div class="lightbox-counter" id="lightboxCounter"></div>
+            <div class="lightbox-zoom-controls">
+                <button class="lightbox-zoom-btn" id="lightboxZoomIn" title="Zoom avant (Ctrl+molette)">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+                </button>
+                <button class="lightbox-zoom-btn" id="lightboxZoomOut" title="Zoom arrière (Ctrl+molette)">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+                </button>
+            </div>
         </div>
 
+        <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/dist/umd/supabase.min.js"></script>
         <script src="./bien.js"></script>
     </body>
 </html>
