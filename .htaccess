@@ -1,0 +1,19 @@
+Options -Indexes
+RewriteEngine On
+RewriteBase /
+
+# Homepage
+RewriteRule ^$ app/index.html [L]
+
+# Clean URLs
+RewriteRule ^sales/?$ src/pages/sales/sales.html [L,QSA]
+RewriteRule ^about/?$ src/pages/about/about.html [L,QSA]
+RewriteRule ^contact/?$ src/pages/contact/contact.html [L,QSA]
+RewriteRule ^bien/?$ src/pages/properties/bien.html [L,QSA]
+RewriteRule ^legal-mentions/?$ src/pages/legal-mentions.html [L,QSA]
+RewriteRule ^privacy-policy/?$ src/pages/privacy-policy.html [L,QSA]
+RewriteRule ^admin/?$ admin/admin.html [L,QSA]
+RewriteRule ^login/?$ admin/login.html [L,QSA]
+
+# Custom 404
+ErrorDocument 404 /404.html
