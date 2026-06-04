@@ -1,3 +1,4 @@
+body{visibility:visible}
 /* legal.css — styles partagés mentions légales + politique de confidentialité */
 
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }

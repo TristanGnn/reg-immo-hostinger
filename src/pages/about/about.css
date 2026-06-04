@@ -1,3 +1,4 @@
+body{visibility:visible}
 /* about.css — design system identique à index */
 
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }

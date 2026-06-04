@@ -1,3 +1,4 @@
+body{visibility:visible}
 /* contact.css — même design system que index/about */
 
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
