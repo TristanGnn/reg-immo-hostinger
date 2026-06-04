@@ -70,7 +70,7 @@
                     if (typeBien) params.set('type', typeBien);
                     if (localisation) params.set('localisation', localisation);
 
-                    window.location.href = `../src/pages/contact/contact.html?${params.toString()}`;
+                    window.location.href = `/contact?${params.toString()}`;
                 });
             }
 
@@ -108,7 +108,7 @@
                         card.querySelector('.nbre-m2').textContent = bien.metres_carres;
                         card.querySelector('.nbre-sdb').textContent = bien.salles_de_bains;
                         card.querySelector('a').style.transitionDelay = `${0.1 + i * 0.15}s`;
-                        card.querySelector('a').href = `../src/pages/properties/bien.html?id=${bien.id}`;
+                        card.querySelector('a').href = `/bien?id=${bien.id}`;
                         const imgEl = card.querySelector('.card-img-wrap img');
                         if (imgEl && bien.images?.pgm) {
                             imgEl.src = bien.images.pgm;

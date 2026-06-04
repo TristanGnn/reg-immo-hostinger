@@ -70,7 +70,7 @@ document.addEventListener('DOMContentLoaded', function() {
         biens.forEach((bien, i) => {
             const card = template.content.cloneNode(true);
             const a = card.querySelector('a');
-            a.href = `../properties/bien.html?id=${bien.id}`;
+            a.href = `/bien?id=${bien.id}`;
             a.style.transitionDelay = `${0.1 + i * 0.15}s`;
             card.querySelector('.vitrine-badge').textContent = bien.statut.toUpperCase();
             card.querySelector('.description').textContent = bien.titre;
