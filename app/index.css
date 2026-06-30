@@ -302,10 +302,11 @@ body{visibility:visible}
 
             .estim-input {
                 flex: 1;
-                height: 54px;
+                min-width: 0;
+                height: 64px;
                 border: 1px solid #ddd5c4;
-                border-radius: 12px;
-                padding: 0 20px;
+                border-radius: 999px;
+                padding: 0 26px;
                 font-family: -apple-system, 'Helvetica Neue', Arial, sans-serif;
                 font-size: 1rem;
                 color: #1d1d1f;
@@ -319,14 +320,14 @@ body{visibility:visible}
             .estim-input::placeholder { color: #aaaaaa; }
 
             .estim-btn {
-                height: 54px;
-                padding: 0 32px;
+                height: 64px;
+                padding: 0 36px;
                 background: #2c2416;
                 color: #ffffff;
                 font-family: -apple-system, 'Helvetica Neue', Arial, sans-serif;
                 font-size: 0.95rem;
                 font-weight: 600;
-                border-radius: 12px;
+                border-radius: 999px;
                 white-space: nowrap;
                 display: flex;
                 align-items: center;
@@ -339,7 +340,14 @@ body{visibility:visible}
             @media (max-width: 768px) {
                 .estim-widget { flex-direction: column; align-items: stretch; gap: 20px; padding: 24px 20px; }
                 .estim-fields { flex-direction: column; }
-                .estim-btn { justify-content: center; }
+                .estim-input {
+                    width: 100%;
+                    height: 64px;
+                    min-height: 64px;
+                    -webkit-appearance: none;
+                    box-sizing: border-box;
+                }
+                .estim-btn { justify-content: center; width: 100%; height: 64px; }
             }
 
             .gold-line {
@@ -888,12 +896,18 @@ body{visibility:visible}
             .blog-tabs-bar {
                 max-width: 780px;
                 margin: 0 auto 52px;
+                overflow-x: auto;
+                -webkit-overflow-scrolling: touch;
+                scrollbar-width: none;
             }
+
+            .blog-tabs-bar::-webkit-scrollbar { display: none; }
 
             .blog-tabs {
                 display: flex;
                 gap: 0;
                 flex-wrap: nowrap;
+                min-width: max-content;
                 width: 100%;
             }
 
@@ -903,8 +917,8 @@ body{visibility:visible}
                 font-weight: 700;
                 text-transform: uppercase;
                 letter-spacing: 1.5px;
-                padding: 11px 0;
-                flex: 1;
+                padding: 11px 20px;
+                flex-shrink: 0;
                 border: none;
                 border-bottom: 2px solid #ddd4c4;
                 background: transparent;
