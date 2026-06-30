@@ -1,0 +1,61 @@
+[build]
+  publish = "."
+
+[[redirects]]
+  from = "/"
+  to = "/app/index.html"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/sales"
+  to = "/src/pages/sales/sales.html"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/about"
+  to = "/src/pages/about/about.html"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/contact"
+  to = "/src/pages/contact/contact.html"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/bien"
+  to = "/src/pages/properties/bien.html"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/legal-mentions"
+  to = "/src/pages/legal-mentions.html"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/privacy-policy"
+  to = "/src/pages/privacy-policy.html"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/admin"
+  to = "/admin/admin.html"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/login"
+  to = "/admin/login.html"
+  status = 200
+  force = true
+
+[[redirects]]
+  from = "/*"
+  to = "/404.html"
+  status = 404
